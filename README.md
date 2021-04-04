@@ -1,1 +1,1 @@
-bespoke-post-app
+post-app-bespoke

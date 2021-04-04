@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Posts app</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <style>
+
+      label{
+        display: block;
+      }
+      input, textarea{
+        padding: 10px;
+        display: block;
+        width: 100%;
+      }
+
+      #posts, #filter, #addPost{
+        margin-top: 50px;
+      }
+
+      p{
+        margin-top: 20px;
+
+      }
+
+    </style>
+
+    <div class="container">
+    <form id="addPost">
+      <fieldset class="row">
+      <div class="col-lg-12"><legend>Create Post</legend></div>
+      <div class="form-group col-lg-6">
+        <label for="userid">User id</label>
+        <input type="text" id="userid" placeholder="userid">
+      </div>
+      <div class="form-group col-lg-6">
+        <label for="title">Titel</label>
+        <input type="text" id="title" placeholder="title">
+      </div>
+      <div class="form-group col-lg-12">
+        <label for="description">Comment</label>
+        <textarea name="description" id="description" cols="30" rows="10"placeholder="Description"></textarea>
+      </div>
+      <div class="col-lg-12"><p>New posts appear as last</p></div>
+      <div class="col-lg-12"><button class="post" type="submit" class="post" id="submit-form">Create Post</button></div>
+      </fieldset>
+    </form>
+    
+    <form action="#" id="filter">
+      <fieldset class="row">
+        <div class="col-lg-12"><legend>Filter</legend></div>
+        <div class="form-group col-lg-12">
+          <label for="filter-text">Filter door de posts op userID</label>
+          <input type="text" id="filter-text" placeholder="Zoek door tabel">
+        </div>
+        <div class="col-lg-12"><button type='submit' id="submit-filter">Filter</button></div>
+      </fieldset>
+    </form>
+
+      <div id="posts"></div>
+    </div>
+    
+
+    <script src="js/index.js" async defer></script>
+  </body>
+</html>
